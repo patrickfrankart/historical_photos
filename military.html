@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script  type="text/javascript" src="index.js"></script>
+
+
+
+    <title>US Occupation/Military Presence in Korea</title>
+</head>
+<body>
+
+<div id="banner">
+    <h2>US Occupation/Military Presence in Korea</h2>
+</div>
+
+
+
+
+<div id="display">
+    <img id="photo"/>
+    <button class="forward" onclick="advanceImage(true)">
+        <img src="../images/previous.svg">
+    </button>
+    <button class="back" onclick="advanceImage()">
+        <img src="../images/next.svg">
+    </button>
+    <div id="zoom" class="img-zoom"></div>
+</div>
+<div id="number">
+
+</div>
+
+<!--div id="number"> WWII_Korea_020.jpg </div-->
+
+<script type="text/javascript">
+            let images = [new Image("../images/military/WWII_Korea_027.jpg", "", ""),
+                            new Image("../images/military/WWII_Korea_062.jpg", "", ""),
+                            new Image("../images/military/WWII_Korea_020.jpg", "", ""),
+                            new Image("../images/military/WWII_Korea_038A.jpg", "", ""),
+                            new Image("../images/military/WWII_Korea_038B.jpg", "", ""),
+                            new Image("../images/military/WWII_Korea_065.jpg", "", ""),
+                            new Image("../images/military/WWII_Korea_041.jpg", "", ""),
+                            new Image("../images/military/WWII_Korea_040.jpg", "", ""),
+                            new Image("../images/military/WWII_Korea_048.jpg", "", ""),
+                            new Image("../images/military/WWII_Korea_049.jpg", "", ""),
+                            new Image("../images/military/WWII_Korea_059.jpg", "", ""),
+                            new Image("../images/military/WWII_Korea_060.jpg", "", ""),
+                            new Image("../images/military/WWII_Korea_061.jpg", "", ""),
+
+
+                             ];
+            let index = 0;
+            let firstImage = document.getElementById("photo");
+            firstImage.src = images[0].getUrl();
+    </script>
+
+
+
+
+
+<footer id="footer">
+
+</footer>
+
+</body>
+</html>
