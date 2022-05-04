@@ -19,12 +19,12 @@
 
 
 <div id="display">
-    <img id="photo" src="../images/legacies/WWII_Korea_017.jpg" >
+    <img id="photo" src="images/legacies/WWII_Korea_017.jpg" >
     <button class="forward" onclick="advanceImage(true)">
-        <img src="../images/previous.svg">
+        <img src="images/previous.svg">
     </button>
     <button class="back" onclick="advanceImage()">
-        <img src="../images/next.svg">
+        <img src="images/next.svg">
     </button>
     <div id="zoom" class="img-zoom"></div>
 </div>
@@ -33,12 +33,12 @@
 
 
 <script type="text/javascript">
-        let images = [new Image("../images/legacies/WWII_Korea_017.jpg", "", ""),
-                        new Image("../images/legacies/WWII_Korea_021.jpg", "", ""),
-                        new Image("../images/legacies/WWII_Korea_065.jpg", "", ""),
-                        new Image("../images/legacies/WWII_Korea_066.jpg", "", ""),
-                        new Image("../images/legacies/WWII_Korea_045.jpg", "", ""),
-                        new Image("../images/legacies/WWII_Korea_044.jpg", "", ""),];
+        let images = [new Image("images/legacies/WWII_Korea_017.jpg", "", ""),
+                        new Image("images/legacies/WWII_Korea_021.jpg", "", ""),
+                        new Image("images/legacies/WWII_Korea_065.jpg", "", ""),
+                        new Image("images/legacies/WWII_Korea_066.jpg", "", ""),
+                        new Image("images/legacies/WWII_Korea_045.jpg", "", ""),
+                        new Image("images/legacies/WWII_Korea_044.jpg", "", ""),];
         let index = 0;
         let firstImage = document.getElementById("photo");
         firstImage.src = images[0].getUrl();
